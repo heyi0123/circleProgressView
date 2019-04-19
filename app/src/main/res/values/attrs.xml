@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="myCircleView">
+        <!--环形颜色-->
+        <attr name="annularColor" format="color" />
+        <!--中心圆颜色-->
+        <attr name="circleColor" format="color" />
+        <!--环形半径-->
+        <attr name="annularRadius" format="dimension" />
+        <!--中心圆半径-->
+        <attr name="circleRadius" format="dimension" />
+        <!--环形宽度-->
+        <attr name="annularWidth" format="dimension" />
+        <!--环形起始角度-->
+        <attr name="startAngle" format="integer" />
+        <!--环形结束角度-->
+        <attr name="endAngle" format="integer" />
+        <!--圆弧颜色-->
+        <attr name="arcColor" format="color" />
+        <!--中心文字-->
+        <attr name="percent" format="integer" />
+        <!--文字大小-->
+        <attr name="textSize" format="dimension"/>
+    </declare-styleable>
+</resources>

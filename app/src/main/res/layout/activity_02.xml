@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:why="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zkht.studydemo.customview.Activity02">
+
+    <!--style="@style/myView"-->
+    <com.zkht.studydemo.customview.CircleView
+        android:id="@+id/circle_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:background="#67a0c4"
+        why:annularColor="#8bbede"
+        why:annularRadius="70dp"
+        why:annularWidth="14dp"
+        why:arcColor="#206914"
+        why:circleColor="#8b2825"
+        why:circleRadius="50dp"
+        why:endAngle="270"
+        why:percent="0"
+        why:startAngle="270"
+        why:textSize="18sp" />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/circle_view"
+        android:layout_marginTop="20dp"
+        android:maxHeight="4dp"
+        android:maxWidth="4dp" />
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d7d2d2">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="3"
+            android:text="你选的颜色是:"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="选择" />
+    </LinearLayout>
+
+</RelativeLayout>
